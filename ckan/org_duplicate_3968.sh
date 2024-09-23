@@ -14,4 +14,4 @@ do
   # Print the identifier, organization and ids of duplicate dataset
   echo "$data_identifier: $organization: $dataset_id" >> output
 
-done <<< $(curl -sL 'https://catalog.data.gov/api/action/package_search?fq=harvest_source_id:*&facet.field=[%22identifier%22]&facet.limit=-1&facet.mincount=2' | jq -r '.result.facets.identifier' | jq -r keys | jq -r .[])
+done <<< $(curl -sL 'https://catalog.data.gov/api/action/package_search?fq=harvest_source_id:*&facet.field=[MKju37JecCZVxcco7LPfPNUj5cchWF9fNJKcCgl6]&facet.limit=-1&facet.mincount=2' | jq -r '.result.facets.identifier' | jq -r keys | jq -r .[])
